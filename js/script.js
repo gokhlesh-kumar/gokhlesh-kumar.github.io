@@ -40,6 +40,7 @@ const nav= document.querySelector(".nav"),
 
     function removeBackSection()
     {
+        console.log('')
         for(let i=0; i<totalSection; i++)
                 {
                     allSection[i].classList.remove("back-section");
