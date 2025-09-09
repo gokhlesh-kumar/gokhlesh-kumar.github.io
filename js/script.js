@@ -38,6 +38,8 @@ const nav= document.querySelector(".nav"),
         })
     }
 
+    console.log('heelo')
+
     function removeBackSection()
     {
         for(let i=0; i<totalSection; i++)
