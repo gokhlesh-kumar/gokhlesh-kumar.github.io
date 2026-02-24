@@ -34,35 +34,13 @@ const projects = [
     gradient:
       "linear-gradient(135deg, var(--accent-blue), var(--accent-purple))",
   },
-  {
-    title: "Mobile App Experiments",
-    description:
-      "Collection of React Native experiments focused on performance optimization, navigation flows, and real-time UX.",
-    tags: ["React Native", "React Navigation", "React Query", "Performance"],
-    metrics: [
-      "60fps interactions",
-      "Optimized state management",
-      "Production-ready patterns",
-    ],
-    gradient:
-      "linear-gradient(135deg, var(--accent-purple), var(--accent-teal))",
-  },
-  {
-    title: "Full-Stack Practice Projects",
-    description:
-      "Web projects using React.js, Node.js, and Express with REST APIs and MUI-based dashboards.",
-    tags: ["React.js", "Node.js", "Express", "REST APIs", "MUI"],
-    metrics: ["End-to-end features", "Clean UI", "API integrations"],
-    gradient:
-      "linear-gradient(135deg, var(--accent-teal), var(--accent-purple))",
-  },
 ];
 
 export function FeaturedProjects() {
   return (
     <section
       id="projects"
-      className="relative py-24 px-4 sm:px-6 overflow-x-hidden"
+      className="relative overflow-x-hidden section-padding"
     >
       {/* Background Blobs */}
       <div
@@ -74,7 +52,7 @@ export function FeaturedProjects() {
         style={{ background: "var(--blob-teal)" }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -83,15 +61,12 @@ export function FeaturedProjects() {
           className="text-center mb-16"
         >
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+            className="section-heading font-bold mb-4"
             style={{ color: "var(--text-primary)" }}
           >
             Featured Projects
           </h2>
-          <p
-            className="text-lg md:text-xl"
-            style={{ color: "var(--text-secondary)" }}
-          >
+          <p className="body-text" style={{ color: "var(--text-secondary)" }}>
             Real-world applications that solve real problems
           </p>
         </motion.div>
